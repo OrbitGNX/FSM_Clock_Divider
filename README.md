@@ -1,5 +1,5 @@
-# Clock Divider (Verilog)  
-A simple parameterized Verilog clock divider that converts a high‑frequency input clock into a lower‑frequency output clock. It also provides a matching signal for driving an LED.  
+# Clock Divider (Verilog HDL)  
+A simple parameterized clock divider that converts a high‑frequency input clock into a lower‑frequency output clock. It also provides a matching signal for driving an LED.  
 
 ## Description
 This module divides an input clock (clk_in) and generates:  
