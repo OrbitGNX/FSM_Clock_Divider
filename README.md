@@ -14,5 +14,5 @@ Input Frequency: 50 MHz
 Output Frequency: 1 Hz  
 
 The divider count is calculated as:  
-TICKS = FREQ_IN / (2 × FREQ_OUT)
+TICKS = (FREQ_IN × FREQ_OUT)/2
 
