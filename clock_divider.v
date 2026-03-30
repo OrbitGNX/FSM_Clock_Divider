@@ -16,25 +16,25 @@ Date:
     30 Mar 2026
 ------------------------------------------------------------------------------------------*/
 module clock_divider(clk_out,clk_led, clk_in);
-    // ports
-    input       clk_in;
-    output  reg clk_out = 0;
-    output  reg clk_led = 0;
+// ports
+input       clk_in;
+output  reg clk_out = 0;
+output  reg clk_led = 0;
 
-    // Division Factor
-    parameter   integer   FREQ_IN   = 50_000_000;           // 50MHz
-    parameter   integer   FREQ_OUT  = 1;                    // 1Hz
-    localparam  integer   TICKS     = FREQ_IN/(2*FREQ_OUT); // Number of ticks every half-cycle
+// Division Factor
+parameter   integer   FREQ_IN   = 50_000_000;           // 50MHz
+parameter   integer   FREQ_OUT  = 1;                    // 1Hz
+localparam  integer   TICKS     = (FREQ_IN*FREQ_OUT)/2; // Number of ticks every half-cycle
 
-    // Clock Generator
-    integer tick_cnt = 0;
+// Clock Generator
+integer tick_cnt = 0;
 
-    always @(posedge clk_in) begin
-        if(tick_cnt == TICKS-1) begin
-            clk_out  <= ~clk_out;    // toggle output
-            clk_led  <= ~clk_led;   // toggle led
-            tick_cnt <= 0;          // reset tick counter
-        end
-        else tick_cnt <= tick_cnt + 1; // increment tick counter
+always @(posedge clk_in) begin
+    if(tick_cnt == TICKS-1) begin
+        clk_out  <= ~clk_out;    // toggle output
+        clk_led  <= ~clk_led;   // toggle led
+        tick_cnt <= 0;          // reset tick counter
     end
+    else tick_cnt <= tick_cnt + 1; // increment tick counter
+end
 endmodule

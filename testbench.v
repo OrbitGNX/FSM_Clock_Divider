@@ -6,7 +6,7 @@ module testbench;
     wire clk_led;
 
     // instantiate clock_divider
-    clock_divider #(.FREQ_IN(10)) dut( // Let input frequency = 10
+    clock_divider #(.FREQ_IN(8),.FREQ_OUT(3)) dut( // Let input frequency = 10
         .clk_out(clk_out),
         .clk_led(clk_led), 
         .clk_in(clk_in)

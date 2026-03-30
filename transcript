@@ -1,18 +1,37 @@
+# Reading pref.tcl
+# OpenFile C:/FSM_demo/FSM_Clock_Divider/clock_divider.mpf
+# Loading project clock_divider
 # Compile of clock_divider.v was successful.
 # Compile of testbench.v was successful.
 # 2 compiles, 0 failed with no errors.
 vsim work.testbench
 # vsim work.testbench 
-# Start time: 21:51:40 on Mar 30,2026
+# Start time: 23:40:56 on Mar 30,2026
 # Loading work.testbench
 # Loading work.clock_divider
 add wave -position end  sim:/testbench/clk_out
 add wave -position end  sim:/testbench/clk_led
 add wave -position end  sim:/testbench/clk_in
 run
+# Break key hit
+# Break in Module testbench at C:/FSM_demo/FSM_Clock_Divider/testbench.v line 17
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Simulation stop requested.
+# Break key hit
+restart
 # Compile of clock_divider.v was successful.
 # Compile of testbench.v was successful.
 # 2 compiles, 0 failed with no errors.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # Loading work.testbench
@@ -21,6 +40,5 @@ run
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-quit -sim
-# End time: 21:55:07 on Mar 30,2026, Elapsed time: 0:03:27
+# End time: 23:49:15 on Mar 30,2026, Elapsed time: 0:08:19
 # Errors: 0, Warnings: 1
