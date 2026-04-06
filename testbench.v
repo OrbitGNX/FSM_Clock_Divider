@@ -1,4 +1,5 @@
-// testbench for clock_divider
+// testbench for clk_div
+
 module testbench;
     // tb signals
     reg  clk_in;
@@ -6,10 +7,10 @@ module testbench;
     wire clk_led;
 
     // instantiate clock_divider
-    clock_divider #(.FREQ_IN(8),.FREQ_OUT(3)) dut( // Let input frequency = 10
+    clk_div #(.FREQ_IN(50),.PERIOD_OUT(3)) dut(
         .clk_out(clk_out),
         .clk_led(clk_led), 
-        .clk_in(clk_in)
+        .clk_in (clk_in)
     );
 
     // apply stimuli

@@ -8,43 +8,43 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/On_Chip_t_Test/UART
-vclock_divider
-Z0 !s110 1774885534
+dC:/FSM_demo/demo_2/FSM_Seq_101
+vclk_div
+Z0 !s110 1775451056
 !i10b 1
-!s100 i[i^z@LNN<zLTEnef<ZbK2
+!s100 o=a[A6>YZIYTOjWhV;2ei0
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-ID3=`QGCjY8;OSKgaaMA432
+IJddO_YjV=C[O=Ok?4<oJB2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dC:/FSM_demo/FSM_Clock_Divider
-w1774884985
-8C:/FSM_demo/FSM_Clock_Divider/clock_divider.v
-FC:/FSM_demo/FSM_Clock_Divider/clock_divider.v
-!i122 6
-L0 18 23
+w1775450824
+8C:/FSM_demo/FSM_Clock_Divider/clk_div.v
+FC:/FSM_demo/FSM_Clock_Divider/clk_div.v
+!i122 2
+L0 15 23
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1774885534.000000
-!s107 C:/FSM_demo/FSM_Clock_Divider/clock_divider.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/FSM_demo/FSM_Clock_Divider/clock_divider.v|
+Z5 !s108 1775451056.000000
+!s107 C:/FSM_demo/FSM_Clock_Divider/clk_div.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/FSM_demo/FSM_Clock_Divider/clk_div.v|
 !i113 1
 Z6 o-work work
 Z7 tCvgOpt 0
 vtestbench
 R0
 !i10b 1
-!s100 4nQV??ENA_NBWP`IhG>[f0
+!s100 RRCoih2:2gGm_72`Me:J81
 R1
-IoTTFMR]jdO2IjkZYRJl9k0
+I5_1K5GlI[dofZ_E:8SEj80
 R2
 R3
-w1774885526
+w1775451054
 8C:/FSM_demo/FSM_Clock_Divider/testbench.v
 FC:/FSM_demo/FSM_Clock_Divider/testbench.v
-!i122 7
-L0 2 17
+!i122 3
+L0 3 17
 R4
 r1
 !s85 0

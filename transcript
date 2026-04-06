@@ -1,44 +1,35 @@
-# Reading pref.tcl
-# OpenFile C:/FSM_demo/FSM_Clock_Divider/clock_divider.mpf
-# Loading project clock_divider
-# Compile of clock_divider.v was successful.
+# Compile of clk_div.v was successful.
 # Compile of testbench.v was successful.
 # 2 compiles, 0 failed with no errors.
 vsim work.testbench
 # vsim work.testbench 
-# Start time: 23:40:56 on Mar 30,2026
+# Start time: 12:50:34 on Apr 06,2026
 # Loading work.testbench
-# Loading work.clock_divider
-add wave -position end  sim:/testbench/clk_out
-add wave -position end  sim:/testbench/clk_led
-add wave -position end  sim:/testbench/clk_in
-run
-# Break key hit
-# Break in Module testbench at C:/FSM_demo/FSM_Clock_Divider/testbench.v line 17
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Break key hit
-# Simulation stop requested.
-# Break key hit
-restart
-# Compile of clock_divider.v was successful.
+# ** Error: (vsim-3033) Instantiation of 'clock_divider' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: C:/FSM_demo/FSM_Clock_Divider/testbench.v Line: 10
+#         Searched libraries:
+#             C:/FSM_demo/FSM_Clock_Divider/work
+# Error loading design
+# End time: 12:50:34 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 6
+# Compile of clk_div.v was successful.
 # Compile of testbench.v was successful.
 # 2 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 12:50:58 on Apr 06,2026
+# Loading work.testbench
+# Loading work.clk_div
+add wave -position end  sim:/testbench/clk_in
+add wave -position end  sim:/testbench/clk_led
+add wave -position end  sim:/testbench/clk_out
 run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.testbench
-# Loading work.clock_divider
 run
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-# End time: 23:49:15 on Mar 30,2026, Elapsed time: 0:08:19
+quit -sim
+# End time: 12:59:39 on Apr 06,2026, Elapsed time: 0:08:41
 # Errors: 0, Warnings: 1
