@@ -7,12 +7,12 @@ This module divides an input clock (clk_in) and generates:
 clk_out – divided clock signal  
 clk_led – identical signal for LED indication  
 
-By default, it divides a 50 MHz clock down to 1 Hz, toggling the outputs every 25,000,000 input clock cycles.  
+By default, it divides a 50 MHz clock down to 1s clock period, toggling the outputs every 25,000,000 input clock cycles.  
 
 ## Default Parameters  
-Input Frequency: 50 MHz  
-Output Frequency: 1 Hz  
+Input Frequency: 50MHz  
+Output Period: 1s  
 
 The divider count is calculated as:  
-TICKS = (FREQ_IN × FREQ_OUT)/2
+TICKS = (FREQ_IN × PERIOD_OUT)/2
 
